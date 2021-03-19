@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+   
+header {
+  background: linear-gradient(to bottom, #7e7f80, #383838);
+  color: #ff9100;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+  padding: 10px;
+}
+
+main {
+  background: #e3e3e3;
+  padding: 10px;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
+     
+a:hover {
+  text-decoration: underline;
+}
+      
+.download {
+  color: #008700;
+}
+      
+footer {
+  background: linear-gradient(to bottom, #7e7f80, #383838);
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+b {
+  font-family: "Comic Sand MS";
+}

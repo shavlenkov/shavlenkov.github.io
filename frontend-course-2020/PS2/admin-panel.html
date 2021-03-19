@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!--Title-->
+    <title>Admin-panel</title>
+
+    <!--Meta-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="generator" content="Sublime Text 3"/> 
+ 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/a92211bf3b.js" crossorigin="anonymous"/></script>
+
+    <!--Style-->
+    <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 text-white bg-dark py-2 pl-4"><font size="5">TralevUp</font></div>
+        <div class="form col-lg-9 py-1 pl-0"><input class="form-control bg-secondary" type="search" placeholder="Search"/></div>
+        <div class="col-lg-1 p-2"><p id="sign_out">Sign Out</p></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 bg-light">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Orders</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-users" aria-hidden="true"></i> Customers</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Reports</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fas fa-layer-group"></i> Integrations</a></li>
+          </ul>
+          <br/>
+          <p class="text-uppercase text-muted">Saved Reports<i class="fa fa-plus-circle" aria-hidden="true" style="margin-left: 120px;"></i></p>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Current mouth</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Last quarter</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-file-text-o"  aria-hidden="true"></i> Social engagement</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Year-end sale</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-10 bg-white py-1">
+        <div class="row">
+          <div class="col-lg-9"><h1 class="ml-2">Customers</h1></div>
+          <div class="row">
+            <div class="btn-group btn-group-toggle col-lg-7" data-toggle="buttons">
+              <label class="btn btn-outline-secondary">
+                <input type="radio"/>Share</label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio"/>Export
+              </label>
+            </div>
+            <div class="dropdown col-lg-5">
+              <button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar-o" aria-hidden="true"></i> This week</button>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <table class="table table-white table-striped table-hover">
+          <thead>
+            <tr>
+              <th><input id="c1" type="checkbox"/></th>
+              <th>#</th>
+              <th>Name Surname</th>
+              <th>Age City</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,001</td>
+              <td>Lorem</td>
+              <td>18 dolor</td>
+              <td>sit</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,002</td>
+              <td>amet</td>
+              <td>45 adipiscing</td>
+              <td>elit</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,003</td>
+              <td>Integer</td>
+              <td>13 odio</td>
+              <td>Praesent</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,003</td>
+              <td>libero</td>
+              <td>49 cursus</td>
+              <td>ante</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr class="bg-success text-white">
+              <td><input type="checkbox" checked/></td>
+              <td>1,004</td>
+              <td>dapibus</td>
+              <td>34 Sed</td>
+              <td>nisi</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,005</td>
+              <td>Nulla</td>
+              <td>18 sem</td>
+              <td>at</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,006</td>
+              <td>nibh</td>
+              <td>23 imperdiet</td>
+              <td>Duis</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,007</td>
+              <td>sagittis</td>
+              <td>15 Praesent</td>
+              <td>mauris</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,008</td>
+              <td>Fusce</td>
+              <td>20 tellus</td>
+              <td>sed</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,009</td>
+              <td>augue</td>
+              <td>35 porta</td>
+              <td>Mauris</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"/></td>
+              <td>1,010</td>
+              <td>massa</td>
+              <td>41 lacinia</td>
+              <td>arcu</td>
+              <td>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-danger">
+                    <input type="radio"/>Delete
+                  </label>
+                  <label class="btn btn-warning">
+                    <input type="radio"/>Edit
+                  </label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="pagination"> 
+          <li class="page-item"><a class="page-link">&laquo;</a></li>
+          <li class="page-item active"><a class="page-link">1</a></li>
+          <li class="page-item"><a class="page-link">2</a></li>
+          <li class="page-item"><a class="page-link">3</a></li>
+          <li class="page-item"><a class="page-link">&raquo;</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

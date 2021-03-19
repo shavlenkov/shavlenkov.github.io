@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+
+    <!--Title-->
+    <title>Table</title>
+
+    <!--Meta-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="generator" content="Sublime Text 3"/>
+
+    <!--Table-->
+    <link rel="stylesheet" href="CSS/table.css" type="text/css"/>
+
+    <!--Button-->
+    <link rel="stylesheet" href="CSS/button.css" type="text/css"/>
+
+    <!--Modal-->
+    <link rel="stylesheet" href="CSS/modal.css" type="text/css"/>
+    
+  </head>
+  <body>
+
+    <div id="usersTable1"></div>
+    <div id="usersTable2"></div>
+
+    <div class="modal" id="create">
+      <div class="modal-header">
+        <i close></i>
+        <h1>Создать TR</h1>
+      </div>
+      <div class="modal-body"> 
+        
+      </div>
+    </div>
+
+    <div class="modal" id="edit">
+      <div class="modal-header">
+        <i close></i>
+        <h1>Редактировать TR</h1>
+      </div>
+      <div class="modal-body"> 
+        
+      </div>
+    </div>
+
+    <!--Table-->
+    <script src="JS/table.js"></script>
+
+    <script>
+      const config1 = {
+        parent: '#usersTable1',
+        columns: [
+          {title: '№', value: '_index'},
+          {title: 'Имя', value: 'name'},
+          {title: 'Фамилия', value: 'surname', sortable: true},
+          {title: 'Возраст', value: 'age', type: 'number'}
+        ],
+        search: {
+          fields: ['name', 'surname']
+        }
+      }
+     const users = [
+       {name: 'Вася', surname: 'Петров', age: 12},
+       {name: 'Вася', surname: 'Васечкин', age: 15},
+     ]
+
+     
+
+
+     dataTable(config1, users)
+
+      const config2 = {
+
+        parent: '#usersTable2',
+        
+        columns: [
+          {title: '№', value: '_index'},
+          {title: 'Создан', value: 'createdAt'},
+          {title: 'Имя', value: 'name'},
+          {title: 'Аватар', value: 'avatar'},
+          {title: 'Фамилия', value: 'surname'},
+          {title: 'День рождения'},
+        ],
+        
+        apiUrl: "https://5f34ff0d9124200016e1941b.mockapi.io/api/v1/students/"
+
+      };
+
+      dataTable(config2);
+
+    </script>
+
+    <!--Modal-->
+    <script src="JS/modal.js"></script>
+    
+  </body>
+</html>

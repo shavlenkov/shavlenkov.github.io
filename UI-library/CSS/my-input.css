@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap');
+
+h1 {
+   font-family: 'Kufam', cursive;
+}
+
+i {
+  font-size: 25px;
+}
+
+input {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:invalid {
+  border: 2px solid #ff0000;
+}

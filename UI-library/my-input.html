@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+
+      <title>My-input</title>
+      <meta charset="UTF-8"/>
+
+      <!--My-input-->
+      <link rel="stylesheet" href="CSS/my-input.css" type="text/css"/>
+ 
+  </head>
+  <body>
+
+    <div id="app">
+
+      <my-input v-for="q in questions" :title="q.title" :placeholder="q.placeholder" :type="q.type" :required="q.required" :value="q.value" v-model="q.value" :pattern="q.pattern" :error_message="q.error_message"/>
+      
+    </div>
+
+    <!--Vue.js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--My-input-->
+    <script src="JS/my-input.js"></script>
+
+    <!--Script-->
+    <script>
+
+      let app = new Vue({
+        el: "#app",
+        data: {
+          questions: [
+            {title: "Как тебя зовут?", placeholder: "Иван", value: "", pattern: "^[а-яА-ЯёЁa-zA-Z]{1,20}$", error_message: "Вы ввели неправильное имя!"},
+            {title: "Сколько тебе лет?", placeholder: "15", type: "number", value: "", pattern: "^[0-9]{1,2}$", error_message: "Такого возраста не существует!"},
+            {title: "Твой email", placeholder: "ivan@example.com", required: true, value: "", pattern: "[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+", error_message: "Вы ввели неправильный email!"}
+          ]
+        }
+      })
+
+    </script>
+  </body>
+</html>

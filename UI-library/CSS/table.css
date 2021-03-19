@@ -1,0 +1,30 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital@1&display=swap');
+
+* { padding: 10px; }
+
+input { width: 20%;	}
+
+table {
+  width: 100%;
+  border: 0;
+}
+
+thead {
+  background: linear-gradient(to bottom, #858585, #303030);
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Balsamiq Sans', cursive;
+
+}
+tbody {
+  background: linear-gradient(to bottom, #b5b5b5, #8f8f8f);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Kufam', cursive;
+}
+
+tbody > tr:hover { background: linear-gradient(to bottom, #919191, #525252); }
