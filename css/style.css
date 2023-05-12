@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+}
+
+.header__img {
+    width: 150px;
+    height: 180px;
+    margin-right: 20px;
+}
+
+.info__name {
+    font-size: 35px;
+}
+
+.info__prof {
+    font-size: 25px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info * {
+    margin-bottom: 10px;
+}
+
+.header__inner {
+    display: flex;
+}
+
+.contacts {
+    list-style-type: none;
+    display: flex;
+}
+
+.contacts__item {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.contacts__item:last-child {
+    margin-right: 0;
+}
+
+.contacts__item-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.aboutMe__title {
+    font-size: 30px;
+}
+
+.technicalSkills__title {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.projects__title {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.education__title {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+.aboutMe__list {
+    font-size: 30px;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.technicalSkills__list {
+    font-size: 30px;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.projects__blocks {
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+.projects__block {
+    border: 4px solid #d6d6d6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #b5b5b5;
+}
+
+.education__blocks {
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+.education__block {
+    border: 4px solid #d6d6d6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #b5b5b5;
+}
+
+.education__block-title-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.projects__block-img, .education__block-img {
+    float: left;
+    margin-right: 20px;
+}
+
+.language {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e8e8e8;
+    float: right;
+}
+
+.projects__block-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.projects__block-descr {
+    margin-left: 50px;
+}
+
+.education__block-date {
+    float: right;
+}
+
+.education__block-descr {
+    margin-left: 50px;
+}
+
+
+.footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.footer__inner {
+    text-align: center;
+    font-size: 25px;
+}
+
